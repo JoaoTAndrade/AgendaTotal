@@ -1,0 +1,68 @@
+﻿@model IEnumerable<AgendaTotal.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Usuários</h1>
+
+<p>
+    <a asp-action="Create">Novo Usuário</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id_usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+           @*  <th>
+                @Html.DisplayNameFor(model => model.senha)
+            </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.pais)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status_)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id_usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+          @*   <td>
+                @Html.DisplayFor(modelItem => item.senha)
+            </td>  *@
+            <td>
+                @Html.DisplayFor(modelItem => item.pais)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status_)
+            </td>
+            <td>
+                    <a asp-action="Edit" class="btn btn-warning edit" asp-route-id="@item.id_usuario">Editar</a>
+                    <a asp-action="Details" class="btn btn-success details" asp-route-id="@item.id_usuario">Detalhes</a>
+                    <a asp-action="Delete" class="btn btn-danger delete" asp-route-id="@item.id_usuario" onclick="return confirm('Deseja excluir esta pessoa?');">Remover</a>
+                @* @Html.ActionLink("Editar", "Edit", new {  id=item.id_usuario  }) |
+                @Html.ActionLink("Detalhes", "Details", new {  id=item.id_usuario }) |
+                @Html.ActionLink("Remover", "Delete", new { id=item.id_usuario }) *@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

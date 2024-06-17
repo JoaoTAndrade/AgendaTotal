@@ -1,0 +1,240 @@
+﻿body {
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=IBM+Plex+Serif:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+}
+
+/* Navbar */
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+    .navbar-nav .nav-item {
+        margin-right: 30px;
+    }
+
+.navbar-brand {
+    font-weight: 570px;
+    color: #FF7E36;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.navbar-nav .nav-link {
+    color: #FF7E36;
+    font-weight: 720px;
+    border-radius: 25px;
+}
+
+    .navbar-nav .nav-link:hover {
+        background-color: #DA70D6;
+        color: #FFFFFF !important;
+        font-weight: 720;
+    }
+
+/* Dropdown do Sobre*/
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #ffffffe3 !important;
+}
+
+.dropdown-menu {
+    background-color: #343a40;
+    border-color: #fff;
+}
+
+    .dropdown-menu .dropdown-item {
+        color: #fff !important;
+    }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #DA70D6 !important;
+            color: #ffffffe3 !important; /* Cor do texto branco */
+        }
+
+
+/* Seção do botoes da navbar do home */
+
+.btn-outline-warning {
+    color: #4CAF50;
+    width: 130px;
+}
+
+    .btn-outline-warning:hover {
+        color: #000000;
+    }
+
+/* Seção do jumbotron do home */
+
+.jumbotron {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+    .jumbotron h1 {
+        color: #ff7e36;
+    }
+
+    .jumbotron p {
+        line-height: 2.5;
+    }
+
+/* Seção da imagem do jumbotron do home */
+
+.img-home {
+    width: 70%;
+    margin-left: 10%;
+}
+
+#button-home {
+    color: #ffffff;
+    background-color: #ff7e36;
+    width: 300px;
+}
+
+    #button-home:hover {
+        background-color: #5dd606;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+/* Seção de Valores no Home*/
+
+.Valores-home p {
+    font-size: 14px;
+}
+
+.Valores-home, i {
+    font-size: 12px;
+}
+
+/* Seção de Valores no Home Cores do Icones*/
+
+.titulo-h1 {
+    text-align: center;
+    color: #000000;
+}
+
+#color {
+    color: #1d3cc0;
+}
+
+    #color:hover {
+        color: #9400d3;
+        transition: 0.5s;
+    }
+
+/*Seção de Sobre Nos no Home*/
+
+.img-sobreNos {
+    width: 58%;
+    margin-left: 20%;
+    top: 40%;
+}
+
+.sobre-nos {
+    padding-top: 1%;
+}
+
+    .sobre-nos p {
+        font-size: 15px;
+    }
+
+/* Seção de Cards sobres*/
+
+.card-img-top {
+    width: 58%;
+    margin-left: 20%;
+    top: 60%;
+}
+
+.card {
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+
+    .card h5 {
+        text-align: center;
+    }
+
+.card-deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo-card {
+    text-align: center;
+    color: #000000;
+    line-height: 2.5;
+}
+
+.helpdesk ul li {
+    list-style: none;
+}
+
+    .helpdesk ul li a {
+        color: #FF7E36;
+    }
+
+.helpdesk a:hover {
+    color: #5dd606;
+}
+
+/* Estilos para o Footer */
+
+footer {
+    background-color: #ff7e36;
+    padding: 30px 0;
+    text-align: center;
+}
+
+    footer a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 20px;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #000000;
+            transition: 0.5s;
+        }
+
+/* Seção de direitos autorais no footer */
+
+.copyright-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+/* Ícones sociais no footer */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+    .social-icons a {
+        text-decoration: none;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 50%;
+        background-position: center center;
+        transition: background-image 0.5s; /* Transition the background-image only */
+    }
+
+        .social-icons a i {
+            color: #FFFFFF;
+            opacity: 0.9;
+            font-size: 22px;
+        }
+
+        .social-icons a:hover {
+            color: #FDD700; /* Keep your desired hover color */
+            background-image: linear-gradient(to top right, #9400D3, #FDD700, #9400D3); /* Specify direction */
+        }

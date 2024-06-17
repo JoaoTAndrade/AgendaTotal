@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Home";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid mt-1">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="~/Imagens/Home-Inicio-2.png" alt="Imagem" class="img-home">
+        </div>
+        <div class="col-md-6">
+          <h1 class="display-3">Agenda Total</h1>
+          <p class="lead">Onde seu tempo é valorizado!</p>
+          <hr class="my-4">
+          <p>Promover a satisfação do usuário de modo que se sinta livre de stress e preocupações, deixando confortável e confiante a utilizar nossa plataforma de organização de tarefas em uma parceria duradoura que nos aproxime cada vez mais.</p>
+          <a asp-action="signup.cshtml"><button type="button" class="btn btn-lg" alt="botão do home" 
+          id="button-home">Comece já</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Seção de valores da empresa-->
+
+  <h1 class="titulo-h1">Porque se juntar ao nosso time?</h1>
+  <div class="container mt-5 Valores-home">
+    <div class="row">
+      <!-- Section 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fa fa-cogs fa-3x mb-3" id="color"></i>
+          <h4>Produtividade</h4>
+          <p>Aumente sua eficiência e alcance seus objetivos de forma mais rápida.</p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fa fa-book fa-3x mb-3" id="color"></i>
+          <h4>Anotações</h4>
+          <p>Faça anotações importantes para não perder informações essenciais.</p>
+        </div>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fa fa-calendar fa-3x mb-3" id="color"></i>
+          <h4>Organização</h4>
+          <p>Organize suas tarefas e mantenha sua vida em ordem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Seção Sobre Nos da empresa e do projeto-->
+
+
+  <h1 class="titulo-card" id="Nos">Conheça nossos valores</h1>
+  <div class="card-deck">
+    <div class="card">
+      <img src="~/Imagens/Team-Sobre-Nós.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Empatia e respeito</h5>
+        <p class="card-text">Nos baseamos na criação, desenvolvimento e aplicação de novas ideias, sempre respeitando o outro e apoiando tudo que nossos usuários desejam fazer.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="~/Imagens/Team-Sobre-Nós.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sonhamos juntos</h5>
+        <p class="card-text">Seja algo pequeno ou astronômico, estamos sempre aqui para te ajudar e ajudar a trilhar o caminho da realização de seus sonho, pois é através do companheirismo que queremos crescer com você. Não importa o desafio, sempre estaremos aqui para transformar seus sonhos em realidade.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="~/Imagens/Team-Sobre-Nós.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">O que nos move</h5>
+        <p class="card-text">Companheirismo, respeito, empatia, sustentabilidade, são os valores que nos movem em direção ao futuro.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seção Sobre Nos da empresa e do projeto-->
+  
+<h1 class="titulo-h1" id="Projetos">O que estamos entregando para você</h1>
+
+<!-- Content for Projeto -->
+<div id="projeto" class="container mt-4 sobre-nos content">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="~/Imagens/Team-Sobre-o-Projeto.png" alt="Image" class="img-sobreNos">
+    </div>
+    <div class="col-md-6">
+      <p>
+        O projeto Agenda Total visa entregar uma solução simples para os usuários de maneira que possam se organizar com o mínimo de esforço para organizar seu dia ou até mesmo organizar todas as atividades de uma grande empresa sem geração de estresse devido a complexibilidade da estrutura a ser montada para que seja real sua aplicação e alinhamento corporativo.      </p>
+      <p>
+        Através da metodologia Getting Things Done combinada com metodologias ágeis conhecidas e em uso no mercado como Kanban, Scrum e Lean, entregaremos ao usuário aquilo que ele precisa de forma altamente organizada sempre buscando aliviar o peso de ua atividade de modo que foque no que é realmente importante, de modo que os impactos gerados pela qualidade de vida, segurança e confiabilidade que são resultantes do processo de melhoria contínua e com ganho em saúde física e mental de cada indivíduo.
+      </p>
+    </div>
+  </div>
+</div> 
+
+<!-- Content for HelpDesk -->
+<div id="sobre" class="container mt-4 sobre-nos content helpdesk" style="display: block;">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="~/Imagens/Team-HelpDesk.png" alt="Image" class="img-sobreNos">
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li><a href="#">Como criar uma tarefa?</a></li>
+        <ul>
+          <li><a href="#">Como adicionar subtarefas em tarefas?</a></li>
+        </ul>
+        <li><a href="#">Posso editar o prazo das tarefas?</a></li>
+        <li><a href="#">Posso anexar arquivos em tarefas?</a></li>
+        <li><a href="#">Posso conectar uma nuvem pessoal à plataforma?</a></li>
+        <li><a href="#">Como o chat bot pode me ajudar?</a></li>
+        <ul>
+          <li><a href="#">Comandos que ajudam a direcionar melhor o uso do chat bot</a></li>
+          <li><a href="#">Por que usar o chat bot</a></li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-12">
+            <a href="#" class="mx-2">Home</a>
+            <a href="#" class="mx-2">Sobre nós</a>
+        </div>
+    </div>
+</div>
